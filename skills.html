@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(/bg\ skill.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+        .container {
+  padding-top: 100px; 
+}
+    </style>
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html" class="logo">Fizzah Nasir</a>
+        <i class="fa-solid fa-bars" class="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/s.html">Services</a>
+            <a href="/skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="/project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="cv.html">Resume</a>
+        </nav>
+   
+    </header>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 6">
+            <div class="item" style="--position: 1"><img src="/n1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="/n2.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="/n3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="/s4.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="/s5.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="/n6.jpg" alt=""></div>
+            
+        </div>
+        <div class="content">
+            <h1 data-content="SKILLS">
+                SKILLS
+            </h1>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
